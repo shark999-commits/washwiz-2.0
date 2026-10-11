@@ -1,0 +1,251 @@
+@media (max-width: 900px) {
+  .auth-shell {
+    padding: 16px;
+  }
+
+  .auth-card {
+    width: 100%;
+    max-width: 480px;
+    min-height: 0;
+    margin: 0 auto;
+    border-radius: 18px;
+    overflow: hidden;
+  }
+
+  .brand-block {
+    min-height: 0;
+    padding: 1.25rem 1.25rem 1rem;
+  }
+
+  .brand-block__wordmark {
+    width: fit-content;
+  }
+
+  .brand-block__wordmark h1 {
+    font-size: clamp(1.9rem, 5vw, 2.6rem);
+    line-height: 1.1;
+  }
+
+  .brand-block__tagline {
+    max-width: none;
+    margin-top: 0.35rem;
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .feature-list {
+    display: grid;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .feature-item {
+    padding: 0.65rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .auth-form {
+    padding: 20px 16px;
+  }
+
+  .form-header-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .form-header-row h2 {
+    font-size: clamp(1.45rem, 4vw, 1.9rem);
+    line-height: 1.2;
+  }
+
+  .auth-form .field-label,
+  .auth-form .password-field-root,
+  .auth-form .password-field,
+  .auth-form .field-label span,
+  .auth-form input,
+  .auth-form select,
+  .auth-form textarea {
+    width: 100%;
+  }
+
+  .auth-form input,
+  .auth-form select,
+  .auth-form textarea,
+  .auth-form .password-field input {
+    min-height: 44px;
+    font-size: 16px;
+  }
+
+  .auth-form .password-field {
+    display: flex;
+    align-items: center;
+  }
+
+  .auth-form .password-field__toggle {
+    right: 0.75rem;
+  }
+
+  .primary-button {
+    width: 100%;
+    min-height: 44px;
+    white-space: nowrap;
+  }
+
+  .dashboard-hero {
+    grid-template-columns: 1fr;
+    padding-top: 0.75rem;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .overview-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .overview-sidebar {
+    position: static;
+  }
+
+  .preset-hero__stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .preset-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .profile-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-hero__actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .profile-tablist {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .profile-tab {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .auth-shell {
+    padding: 12px;
+  }
+
+  .feature-list {
+    display: none;
+  }
+
+  .brand-block {
+    padding: 1rem 1.25rem;
+  }
+
+  .brand-block__tagline {
+    max-width: none;
+  }
+
+  .brand-block__restricted {
+    white-space: nowrap;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-hero__actions {
+    flex-direction: column;
+  }
+
+  .dashboard-hero__actions > * {
+    width: 100%;
+  }
+
+  .preset-hero {
+    padding: 1.25rem 1rem;
+  }
+
+  .preset-hero__search {
+    max-width: none;
+  }
+
+  .preset-hero__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .preset-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-hero__identity {
+    width: 100%;
+  }
+
+  .profile-hero__identity h2 {
+    font-size: clamp(1.45rem, 7vw, 1.8rem);
+  }
+
+  .profile-details-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 18px;
+  }
+
+  .auth-form {
+    padding: 20px 16px;
+  }
+
+  .form-header-row {
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .form-header-row h2 {
+    font-size: 1.5rem;
+  }
+
+  .link-button {
+    align-self: flex-start;
+  }
+
+  .auth-actions,
+  .auth-form .password-field-root {
+    width: 100%;
+  }
+
+  .dashboard-hero__content h2 {
+    font-size: clamp(1.6rem, 8vw, 2rem);
+  }
+
+  .stat-card__value {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+  }
+
+  .profile-hero__identity {
+    gap: 0.7rem;
+  }
+
+  .profile-tab {
+    font-size: 0.75rem;
+    padding: 0.7rem 0.5rem;
+  }
+
+  .profile-tab__icon {
+    display: none;
+  }
+}

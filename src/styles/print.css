@@ -1,0 +1,59 @@
+@page {
+  size: A4;
+  margin: 0.5in;
+}
+
+@media print {
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    color: #000 !important;
+    background: #fff !important;
+  }
+
+  body {
+    background: #fff;
+    font-size: 12pt;
+  }
+
+  .page-shell,
+  .topbar,
+  .dashboard-grid,
+  .content-grid,
+  .toolbar,
+  .toast-container,
+  .modal-overlay,
+  nav,
+  .nav-link,
+  .card:not(.receipt-container),
+  .modal-header,
+  .modal-footer,
+  .modal-content,
+  .receipt-actions,
+  .receipt-close,
+  .print-hidden {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  .receipt-container {
+    display: block !important;
+    width: 100%;
+    max-width: 100%;
+    background: #fff !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .receipt-document {
+    width: 100%;
+    max-width: 80mm;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    background: #fff;
+    color: #000;
+    border: none;
+  }
+}

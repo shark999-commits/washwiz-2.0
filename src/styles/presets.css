@@ -1,0 +1,69 @@
+.preset-detail-modal__procedure {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.preset-detail-modal__procedure-step {
+  display: grid;
+  grid-template-columns: 2.25rem minmax(0, 1fr);
+  align-items: start;
+  gap: 0.85rem;
+  padding: 0.9rem 0.95rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--ocean-50);
+}
+
+.preset-detail-modal__procedure-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: var(--ocean-700);
+  color: #fff;
+  font-weight: 700;
+  font-size: var(--type-13);
+}
+
+.preset-detail-modal__procedure-copy {
+  min-width: 0;
+}
+
+.preset-detail-modal__procedure-copy strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--ocean-900);
+  font-size: var(--type-15);
+}
+
+.preset-detail-modal__procedure-copy p {
+  margin: 0 0 0.5rem;
+  color: var(--slate-600);
+  line-height: 1.6;
+}
+
+.preset-detail-modal__procedure-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--slate-700);
+  line-height: 1.6;
+}
+
+.preset-detail-modal__procedure-item {
+  margin: 0.15rem 0;
+}
+
+@media (max-width: 640px) {
+  .preset-detail-modal__procedure-step {
+    gap: 0.7rem;
+    padding: 0.8rem 0.75rem;
+  }
+
+  .preset-detail-modal__procedure-index {
+    width: 2rem;
+    height: 2rem;
+  }
+}
