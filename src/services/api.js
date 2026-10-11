@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost/washwiz/php-api'
+const API_BASE_URL = window.location.origin + '/washwiz/php-api'
 
 async function request(endpoint, { method = 'GET', body, headers = {} } = {}) {
   const options = {
